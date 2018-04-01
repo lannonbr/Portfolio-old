@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Benjamin Lannon</title>
+    <script>
+        function canUseWebP() {
+            var elem = document.createElement('canvas');
+
+            if (!!(elem.getContext && elem.getContext('2d')))
+                return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="title">
+                Benjamin Lannon
+            </div>
+            <nav id="nav-desktop">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <i class="fa fa-bars menu-button" onclick="toggleNav()"></i>
+        </div>
+    </header>
+    <nav class="nav-mobile">
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./index.html#work">Work</a>
+            </li>
+            <li>
+                <a href="./index.html#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="hero">
+        <div class="cont grid">
+            <div class="grid__col grid__col--1-of-2">
+                <h2 style="margin: 0px;">Hi I'm Benjamin</h2>
+                <h2 style="margin: 0px;">A Developer with a passion for driving technology forward and telling stories through the web</h2>
+            </div>
+        </div>
+    </section>
+    <section id="whoami">
+        <h3>Who Am I</h3>
+        <div class="cont grid">
+            <div class="grid__col grid__col--1-of-2">
+                <img src="./images/avatar.jpg" alt="Profile Picture" class="center">
+            </div>
+            <div class="grid__col grid__col--1-of-2">
+                <p>
+                    I'm Benjamin Lannon, a web developer and designer stationed in Upstate NY. Technology drives us forward and I want to be
+                    able to help others using the skills I have. As the web is my platform, I have the ability to reach billions
+                    of people.
+                </p>
+                <p>
+                    Currently I am a senior at Clarkson University studying Computer Science. I am a former lab director of
+                    <a href="http://cosi.clarkson.edu/cosi.html">COSI</a>: The Clarkson Open Source Institute. In my downtime, I enjoy singing and producing our school
+                    newspaper.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section id="work">
+        <h3>Past Work</h3>
+        <div class="cont grid">
+            <div class="grid__col grid__col--1-of-2">
+                <div class="work" id="work-mirror">
+                    <div class="work-content">
+                        <div class="work-title">Clarkson University Mirror</div>
+                        <span>Website for Clarkson University FOSS Mirror</span>
+                        <div class="work-pills">
+                            <span class="mini-pill">Pug</span>
+                            <span class="mini-pill">SASS</span>
+                        </div>
+                    </div>
+
+                    <a href="http://mirror.clarkson.edu">Visit</a>
+                </div>
+                <div class="work" id="work-dubsdot">
+                    <div class="work-content">
+                        <div class="work-title">Dubsdot</div>
+                        <span>Web Hub for COSI</span>
+                        <div class="work-pills">
+                            <span class="mini-pill">Neat Grid System</span>
+                            <span class="mini-pill">SASS</span>
+                        </div>
+                    </div>
+                    <a href="http://dubsdot.cosi.clarkson.edu">Visit</a>
+                </div>
+            </div>
+            <div class="grid__col grid__col--1-of-2">
+                <div class="work" id="work-talks">
+                    <div class="work-content">
+                        <div class="work-title">Talks</div>
+                        <span>Webapp to post talks for COSI Meetings</span>
+                        <div class="work-pills">
+                            <span class="mini-pill">NodeJS</span>
+                            <span class="mini-pill">Angular</span>
+                            <span class="mini-pill">SQLite</span>
+                        </div>
+                    </div>
+                    <a href="http://talks.cosi.clarkson.edu">Visit</a>
+                </div>
+                <div class="work" id="work-camel">
+                    <div class="work-content">
+                        <div class="work-title">CAMEL Redesign</div>
+                        <span>Redesign of Dr. Chen Liu's Lab website</span>
+                        <div class="work-pills">
+                            <span class="mini-pill">CSS Grid</span>
+                            <span class="mini-pill">Web Components (Polymer)</span>
+                        </div>
+                        <a href="http://camel.clarkson.edu">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__col grid__col--1-of-2">
+                <div class="work" id="work-speedrunner">
+                    <div class="work-content">
+                        <div class="work-title">Speedrunner</div>
+                        <span>An Alexa Skill for getting Video Game Speed runs</span>
+                        <div class="work-pills">
+                            <span class="mini-pill">Alexa</span>
+                            <span class="mini-pill">AWS Lambda</span>
+                        </div>
+                    </div>
+
+                    <a href="https://speedrunner.io">Visit</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <div class="cont grid">
+            <div class="grid__col grid__col--1-of-2">
+                <p>
+                    You can get in touch with me by email at benjamin@lannonbr.com, or view more on any of the following links.
+                </p>
+                <p>
+                    As well, here is my
+                    <a href="./resume.pdf">resume</a> (Last Updated in Feb. 2018)
+                </p>
+            </div>
+            <div class="grid__col grid__col--1-of-2 pills">
+                <div class="grid pills-grid">
+                    <div class="grid__col grid__col--1-of-2 pill-col">
+                        <div class="pill pill-twitter">
+                            <a href="https://twitter.com/lannonbr">
+                                <i class="fa fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__col grid__col--1-of-2 pill-col">
+                        <div class="pill pill-github">
+                            <a href="https://github.com/lannonbr">
+                                <i class="fa fa-github"></i>
+                                <span>Github</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid pills-grid">
+                    <div class="grid__col grid__col--1-of-2 pill-col">
+                        <div class="pill pill-linkedin">
+                            <a href="https://www.linkedin.com/in/lannonbr">
+                                <i class="fa fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Designed by Benjamin Lannon, Hero Image by Joey Kyber
+    </footer>
+
+    <script src="https://use.fontawesome.com/a5e9de0506.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
